@@ -21,6 +21,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Bind Port to our machine
 # argv[1] = our port number
 try:
+    # IP, PORT, leave IP blank to specify this machine
     s.bind(('', int(PORT))
     # Listen for x amount of clients - in this case 1 since we're not doing a multi-server
     s.listen(1)
